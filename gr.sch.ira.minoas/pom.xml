@@ -26,7 +26,7 @@
   <properties>
     <servlet-api.version>2.5</servlet-api.version>
     <seam-version>2.2.1.Final</seam-version>
-    <hibernate-version>3.2.1.ga</hibernate-version>
+    <hibernate-version>3.3.1.GA</hibernate-version>
     <richfaces-version>3.3.3.Final</richfaces-version>
   </properties>
 
@@ -108,6 +108,12 @@
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-annotations</artifactId>
+        <version>${hibernate-version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
         <version>${hibernate-version}</version>
       </dependency>
 
@@ -253,9 +259,19 @@
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-annotations</artifactId>
-      <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.antlr</groupId>
+      <artifactId>antlr-runtime</artifactId>
+      <version>3.0.1</version>
+    </dependency>
+    
     <!-- rich-faces -->
 
     <dependency>
